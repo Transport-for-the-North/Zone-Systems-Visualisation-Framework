@@ -64,7 +64,7 @@ vi.mock("@transport-for-the-north/vis-core/layouts", () => ({
 }));
 
 // Mock dynamic imports for config files
-vi.mock("./configs/bsip/appConfig.js", () => ({
+vi.mock("./configs/zone-systems/appConfig.js", () => ({
   appConfig: {
     title: "Test App",
     introduction: "Test introduction",
@@ -82,7 +82,7 @@ vi.mock("./configs/bsip/appConfig.js", () => ({
   },
 }));
 
-vi.mock("./configs/bsip/bands.js", () => ({
+vi.mock("./configs/zone-systems/bands.js", () => ({
   bands: [],
 }));
 
@@ -92,7 +92,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 import App from './App.jsx';
 import { MemoryRouter } from "react-router-dom";
 
-import.meta.env.VITE_APP_NAME = "bsip";
+import.meta.env.VITE_APP_NAME = "zone-systems";
 
 describe("App Component", () => {
   it("Renders the login page because we're not connected", async () => {
@@ -122,7 +122,7 @@ describe("App Component", () => {
 
   it("Renders the homePage where we're connected", async () => {
     // Override the config mock for this test to have authenticationRequired: false
-    vi.doMock("./configs/bsip/appConfig.js", () => ({
+    vi.doMock("./configs/zone-systems/appConfig.js", () => ({
       appConfig: {
         title: "TAME React Vis Template",
         introduction: "Test introduction",
