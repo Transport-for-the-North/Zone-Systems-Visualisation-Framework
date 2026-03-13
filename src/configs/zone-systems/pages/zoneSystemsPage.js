@@ -4,8 +4,27 @@ import { zoneBoundaryPaint } from "../customPaintDefinitions";
 
 const zoneTypeValues = [
   { displayValue: "NoHAM v2.10", paramValue:1 , colourValue: { value: "YlGnBu", label: "YlGnBu" } },
+  { displayValue: "bsip_north_east", paramValue: 2 },
+  { displayValue: "bsip_north_west", paramValue: 3 },
+  { displayValue: "bsip_yorkshire_humber", paramValue: 4 },
   { displayValue: "NoRMS v2.11",    paramValue:5  },
-  { displayValue: "LAD 2024",              paramValue:29  }, 
+  { displayValue: "MSOA 2021 BFC v5", paramValue: 6 },
+  { displayValue: "MSOA 2021 BGC v2", paramValue: 7 },
+  { displayValue: "LAD 2021", paramValue: 8 },
+  { displayValue: "24 CA Sectors", paramValue: 9 },
+  { displayValue: "23 CA Sectors", paramValue: 10 },
+  { displayValue: "LAD 2020", paramValue: 11 },
+  { displayValue: "WPC", paramValue: 12 },
+  { displayValue: "TfN Area Type", paramValue: 13 },
+  { displayValue: "MSOA 2011 BFE v3", paramValue: 14 },
+  { displayValue: "STB 2023", paramValue: 15 },
+  { displayValue: "TRSE Combined Authorities", paramValue: 16 },
+  { displayValue: "Output Areas 2021", paramValue: 17 },
+  { displayValue: "LAD 2023 - Simplified boundaries", paramValue: 18 },
+  { displayValue: "LSOA 2021 v8", paramValue: 19 },
+  { displayValue: "EVCI-LAD_Combined", paramValue: 27 },
+  { displayValue: "Output_Areas_2021-England", paramValue: 28 },
+  { displayValue: "LAD 2024",paramValue:29  }, 
   { displayValue: "BRONTE",       paramValue:37  },
 ];
 
