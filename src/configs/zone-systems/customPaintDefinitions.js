@@ -5,20 +5,21 @@ export const zoneBoundaryPaint = {
   "fill-color": [
     "match",
     ["get", "zone_type_id"],
-    10, "#3a86ff",   // Combined Authorities — blue
-    29, "#ff6b6b",   // Local Authorities — red
-    37, "#51cf66",
-    28, "#1a56cc",   // BRONTE — green
+    1, "#3a86ff",   // Combined Authorities — blue
+    5, "#ff6b6b",   // Local Authorities — red
+    29, "#51cf66",
+    37, "#1a56cc",   // BRONTE — green
+
     "#aaaaaa"        // fallback for any unlisted zone type
   ],
   "fill-opacity": 0.3,
   "fill-outline-color": [
     "match",
     ["get", "zone_type_id"],
-    10, "#1a56cc",
-    29, "#cc2222",
-    37, "#2d9e45",
-    28, "#1a56cc",
+    1, "#1a56cc",
+    5, "#cc2222",
+    29, "#2d9e45",
+    37, "#1a56cc",
     "#666666"
   ],
 };
