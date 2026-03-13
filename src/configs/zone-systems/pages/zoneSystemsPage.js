@@ -30,18 +30,26 @@ export const zoneSystemsPage = {
     // ----- VISUALIZATIONS -----
     visualisations: [
       {
-        name: "Zone Boundaries",
-        type: "tile",
-        source: "api",
-        path: "/api/vectortiles/zones/1/{z}/{x}/{y}",
-        sourceLayer: "zones",
-        geometryType: "polygon",
-        style: "polygon-fill",
-        isHoverable: true,
-        isStylable: true,
-        shouldHaveTooltipOnHover: true,
-        shouldHaveLabel: true,
-        labelField: "name",
+                name: "Data Categories",
+        
+        // Type: "geojson" - API returns GeoJSON with geometry
+        // The API response should be a FeatureCollection with features
+        type: "geojson",
+        
+        // Style: "polygon-categorical" - Discrete categories with specific colors
+        // Each unique value in valueField gets its own color
+        style: "polygon-categorical",
+        
+        // Field containing the category value
+        valueField: "category",
+        
+        dataSource: "api",
+        dataPath: "/api/data/categories",
+        
+        // UI controls
+        enforceNoColourSchemeSelector: false,  // Allow users to change color scheme
+        enforceNoClassificationMethod: true,   // Hide classification method (not applicable for categorical)
+
       },
     ],
 
