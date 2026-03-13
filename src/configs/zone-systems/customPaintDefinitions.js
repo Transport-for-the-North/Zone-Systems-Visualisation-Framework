@@ -18,7 +18,7 @@ export const zoneBoundaryPaint = {
     11, "#f1ab48",
     12, "#8338ec",
     13, "#3a86ff",
-    14, "#eea8c6",,
+    14, "#eea8c6",
     15, "#fb5607",
     16, "#ffbe0b",
     17, "#8338ec",
