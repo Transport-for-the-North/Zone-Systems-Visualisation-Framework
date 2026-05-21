@@ -27,7 +27,7 @@
     "colorbrewer": "^1.6.1",
     "dompurify": "^3.3.0",
     "html-react-parser": "^5.2.7",
-    "js-cookie": "^3.0.5",
+    "js-cookie": "^3.0.7",
     "jwt-decode": "^4.0.0",
     "leaflet": "^1.9.4",
     "lodash.debounce": "^4.0.8",
